@@ -3,6 +3,7 @@
   background: $smooth-black;
   padding: 25px;
   color: $silver;
+  border-bottom: 4px solid rgba(255, 255, 255, .05);
 }
 
 
@@ -17,14 +18,10 @@
 
 .navbar-yidir .nav-link {
   color: $silver;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar-yidir .navbar-toggler {
-  color: $silver;
-}
-
-.navbar-yidir #navbarSupportedContent {
   color: $silver;
 }
 
@@ -34,7 +31,7 @@
   background-color:$grey-black; /* Couleur de fond du bouton */
   border: 1px solid $greeny;
   color: $greeny;
-  padding: 10px 20px; /* Espace à l'intérieur du bouton */
+  padding: 8px 20px; /* Espace à l'intérieur du bouton */
   border-radius: 14px; /* Coins arrondis du bouton */
   transition: background-color 0.3s ease; /* Transition de couleur de fond au survol */
 }
