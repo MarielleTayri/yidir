@@ -1,12 +1,72 @@
 .navbar-yidir {
   justify-content: space-between;
   background: $smooth-black;
+  padding: 25px;
+  color: $silver;
 }
+
 
 .navbar-yidir .navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar-yidir .navbar-logo img {
-  width: 60px;
+  width: 70px;
+}
+
+
+.navbar-yidir .nav-link {
+  color: $silver;
+  font-size: 18px;
+}
+
+.navbar-yidir .navbar-toggler {
+  color: $silver;
+}
+
+.navbar-yidir #navbarSupportedContent {
+  color: $silver;
+}
+
+
+/* Styles pour le bouton "Contactez-nous" */
+.navbar-yidir .contact-button {
+  background-color:$grey-black; /* Couleur de fond du bouton */
+  border: 1px solid $greeny;
+  color: $greeny;
+  padding: 10px 20px; /* Espace à l'intérieur du bouton */
+  border-radius: 14px; /* Coins arrondis du bouton */
+  transition: background-color 0.3s ease; /* Transition de couleur de fond au survol */
+}
+
+.navbar-yidir .contact-button:hover {
+  background-color: $greeny; /* Nouvelle couleur de fond au survol */
+  color: $silver;
+}
+
+
+/* Gestion de la visibilité en mode responsive */
+
+@media (max-width: 768px) {
+  .navbar-yidir .nav-link {
+    font-size: 14px;
+  }
+  .navbar-yidir .nav-link:hover {
+    color: $greeny; /* Couleur du texte au survol */
+  }
+
+  .navbar-yidir .contact-button {
+    display: inline; /* Affichez le texte comme un élément en ligne */
+    background-color: transparent; /* Rend le fond transparent */
+    border: none; /* Supprime la bordure */
+    padding: 0; /* Supprime le rembourrage */
+    font-size: 14px; /* Réglez la taille de la police */
+    transition: none; /* Supprime la transition au survol */
+    color: $silver;
+  }
+
+  .navbar-yidir .contact-button:hover {
+    background-color: transparent; /* Aucun changement de couleur de fond au survol */
+    color: $greeny;
+  }
 }
