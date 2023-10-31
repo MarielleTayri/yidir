@@ -1,11 +1,21 @@
 .navbar-yidir {
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   background: $smooth-black;
   padding: 25px;
   color: $silver;
   border-bottom: 4px solid rgba(255, 255, 255, .05);
+  position:sticky;
 }
 
+.navigation-wrap {
+  max-width: 1170px;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
 
 .navbar-yidir .navbar-collapse {
   flex-grow: 0;
