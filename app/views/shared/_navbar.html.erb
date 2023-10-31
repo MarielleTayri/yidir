@@ -4,22 +4,15 @@
       <%= image_tag "logo-nom.png", alt: "Yidir", width: 200 %>
     <% end %>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="nav-links-container">
+      <%= link_to "Nos projets", "#", class: "nav-link" %>
+      <%= link_to "Notre équipe", "#", class: "nav-link" %>
+    </div>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item active">
-          <%= link_to "L'équipe", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Les projets", "#", class: "nav-link" %>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <%= link_to "Contactez-nous", "#", class: "nav-link contact-button" %>
-    </div>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <%= link_to "Contactez-nous", "#", class: "nav-link contact-button" %>
+      </li>
+    </ul>
   </section>
 </div>

@@ -2,7 +2,7 @@
   justify-content: center;
   align-items: center;
   background: $smooth-black;
-  padding: 25px;
+  padding: 20px;
   color: $silver;
   border-bottom: 4px solid rgba(255, 255, 255, .05);
   position:sticky;
@@ -17,28 +17,34 @@
   position: relative;
 }
 
-.navbar-yidir .navbar-collapse {
-  flex-grow: 0;
-}
-
 .navbar-yidir .navbar-logo img {
   width: 70px;
 }
 
-
 .navbar-yidir .nav-link {
   color: $silver;
   font-size: 16px;
+  font-weight: medium;
 }
 
-.navbar-yidir .navbar-toggler {
-  color: $silver;
+.navbar-yidir .nav-link:hover{
+  color: $greeny;
+  transform: scale(1.1); /* Agrandissement de 10% */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée pour l'effet 3D */
+  transition: all 0.3s ease; /* Transition fluide de toutes les propriétés */
+}
+
+.nav-links-container {
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  flex-direction: row;
+  display: flex;
 }
 
 
 /* Styles pour le bouton "Contactez-nous" */
 .navbar-yidir .contact-button {
-  background-color:$grey-black; /* Couleur de fond du bouton */
+  background-color: $grey-black; /* Couleur de fond du bouton */
   border: 1px solid $greeny;
   color: $greeny;
   padding: 8px 20px; /* Espace à l'intérieur du bouton */
@@ -47,33 +53,42 @@
 }
 
 .navbar-yidir .contact-button:hover {
-  background-color: $greeny; /* Nouvelle couleur de fond au survol */
+  background-color: $greeny; /* Couleur de fond au survol */
   color: $silver;
+  transform: none;
+  text-shadow: none;
+  transition: color 0.3s ease;
 }
 
 
 /* Gestion de la visibilité en mode responsive */
 
 @media (max-width: 768px) {
+  .navbar-yidir .navbar-logo img {
+    width: 50px;
+  }
+
   .navbar-yidir .nav-link {
     font-size: 14px;
   }
   .navbar-yidir .nav-link:hover {
     color: $greeny; /* Couleur du texte au survol */
+    transform: none;
+    text-shadow: none;
+  }
+
+  .nav-links-container {
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    flex-direction: column;
+    align-items: center;
   }
 
   .navbar-yidir .contact-button {
-    display: inline; /* Affichez le texte comme un élément en ligne */
-    background-color: transparent; /* Rend le fond transparent */
-    border: none; /* Supprime la bordure */
-    padding: 0; /* Supprime le rembourrage */
     font-size: 14px; /* Réglez la taille de la police */
-    transition: none; /* Supprime la transition au survol */
-    color: $silver;
-  }
+   }
 
   .navbar-yidir .contact-button:hover {
-    background-color: transparent; /* Aucun changement de couleur de fond au survol */
-    color: $greeny;
+    color: $silver;
   }
 }
