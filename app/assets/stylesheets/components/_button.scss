@@ -1,0 +1,41 @@
+/* Styles pour le bouton de la navbar "Contactez-nous" */
+.navbar-button {
+  text-decoration: none;
+  background-color: $grey-black; /* Couleur de fond du bouton */
+  border: 1px solid $greeny;
+  color: $greeny;
+  padding: 8px 20px; /* Espace à l'intérieur du bouton */
+  border-radius: 14px; /* Coins arrondis du bouton */
+  transition: background-color 0.3s ease; /* Transition de couleur de fond au survol */
+}
+
+.navbar-button:hover,
+.header-button:hover {
+  background-color: $greeny; /* Couleur de fond au survol */
+  color: $silver;
+  transform: none;
+  text-shadow: none;
+  transition: color 0.3s ease;
+}
+
+.header-button {
+  text-decoration: none;
+  color: $greeny;
+  padding: 12px;
+  border: solid 1px $greeny;
+  border-radius: 8px;
+
+}
+// .header-button:hover {
+//   color: $silver;
+//   background: $grey-black;
+// }
+
+@media (max-width: 768px){
+  .navbar-button {
+    font-size: 14px; /* Réglez la taille de la police */
+   }
+  .navbar-button:hover {
+    color: $silver;
+  }
+}

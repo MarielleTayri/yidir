@@ -42,25 +42,6 @@
 }
 
 
-/* Styles pour le bouton "Contactez-nous" */
-.navbar-yidir .contact-button {
-  background-color: $grey-black; /* Couleur de fond du bouton */
-  border: 1px solid $greeny;
-  color: $greeny;
-  padding: 8px 20px; /* Espace à l'intérieur du bouton */
-  border-radius: 14px; /* Coins arrondis du bouton */
-  transition: background-color 0.3s ease; /* Transition de couleur de fond au survol */
-}
-
-.navbar-yidir .contact-button:hover {
-  background-color: $greeny; /* Couleur de fond au survol */
-  color: $silver;
-  transform: none;
-  text-shadow: none;
-  transition: color 0.3s ease;
-}
-
-
 /* Gestion de la visibilité en mode responsive */
 
 @media (max-width: 768px) {
@@ -82,14 +63,5 @@
     grid-row-gap: 6px;
     flex-direction: column-reverse;
     display: flex;
-  }
-
-  .navbar-yidir .contact-button {
-    font-size: 14px; /* Réglez la taille de la police */
-
-   }
-
-  .navbar-yidir .contact-button:hover {
-    color: $silver;
   }
 }
