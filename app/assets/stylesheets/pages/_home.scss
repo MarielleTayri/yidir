@@ -1,1 +1,14 @@
 // Specific CSS for your home-page
+.h1 {
+  font-size: 52px;
+  max-width: 650px;
+}
+
+
+@media (max-width: 768px) {
+  .h1 {
+      max-width: 100%;
+      font-size: 2.1rem;
+      line-height: 3.2rem;
+  }
+}
