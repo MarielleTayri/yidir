@@ -1,8 +1,18 @@
 <div class="container mt-5">
-  <h1 class="h1">Yidir transforme vos <span class="text-span-1">idées</span> en réalités <span class="text-span-1">digitales</span>
-  </h1>
-  <p>De la conception au développement d'applications web et web-mobile sur mesure</p>
-  <div>
-    <%= link_to "On discute de votre idée ?", "#", class: "header-button " %>
+  <div class="row">
+    <div class="col-md-6">
+      <h1 class="h1-header">Yidir transforme vos <span class="text-span-1">idées</span> en réalités <span class="text-span-1">digitales</span></h1>
+      <p class="p-header">De la conception au développement d'applications web et web-mobile sur mesure</p>
+      <div class="button-container">
+        <%= link_to "On discute de votre idée ?", "#", class: "header-button" %>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <section class="profile-wrap">
+        <%= link_to "#", class: "profile-logo" do %>
+          <%= image_tag "profile.png", alt: "Yidir", width: 350 %>
+        <% end %>
+      </section>
+    </div>
   </div>
 </div>
