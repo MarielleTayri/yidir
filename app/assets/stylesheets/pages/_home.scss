@@ -13,11 +13,18 @@
 
 .card {
   background-color: transparent;
-  border: solid 1px $greeny;
+  border: solid 0.1px $greeny;
   border-radius: 10px;
 }
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  border: none;
+}
+
 .card-body {
   color: $silver;
+  text-align: center;
 }
 
 
