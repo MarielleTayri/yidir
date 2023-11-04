@@ -7,21 +7,23 @@
   border-bottom: 4px solid rgba(255, 255, 255, .05);
   position:sticky;
   top: 0;
+  margin-bottom: 130px;
 }
 
+//style on scroll
 .navbar-transparent {
   background: $black;
-  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition fluide de la couleur de fond et de la couleur de la bordure */
+  transition:0.3s ease, border-color 0.3s ease; /* Transition fluide de la couleur de fond et de la couleur de la bordure */
 }
 
-.navigation-wrap {
-  max-width: 1170px;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  position: relative;
-}
+// .navigation-wrap {
+//   max-width: 1170px;
+//   flex: 1;
+//   justify-content: space-between;
+//   align-items: center;
+//   display: flex;
+//   position: relative;
+// }
 
 .navbar-yidir .navbar-logo img {
   width: 70px;
@@ -29,7 +31,7 @@
 
 .navbar-yidir .nav-link {
   color: $silver;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: medium;
 }
 
