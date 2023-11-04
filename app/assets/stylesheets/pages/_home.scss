@@ -12,12 +12,6 @@
   color: $greeny;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr,1fr;
-  grid-gap:16px;
-}
-
 .card {
   background-color: $smooth-black;
   border-radius: 6px;
