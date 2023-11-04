@@ -6,6 +6,12 @@
   color: $silver;
   border-bottom: 4px solid rgba(255, 255, 255, .05);
   position:sticky;
+  top: 0;
+}
+
+.navbar-transparent {
+  background: $black;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Transition fluide de la couleur de fond et de la couleur de la bordure */
 }
 
 .navigation-wrap {
@@ -23,7 +29,7 @@
 
 .navbar-yidir .nav-link {
   color: $silver;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: medium;
 }
 

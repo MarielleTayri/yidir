@@ -1,18 +1,29 @@
-<div class="navbar navbar-expand-sm navbar-yidir">
-  <section class="navigation-wrap">
-    <%= link_to "#", class: "navbar-logo" do %>
-      <%= image_tag "logo-nom.png", alt: "Yidir", width: 200 %>
-    <% end %>
-
-    <div class="nav-links-container">
-      <%= link_to "Projets", "#", class: "nav-link" %>
-      <%= link_to "À propos", "#", class: "nav-link" %>
-    </div>
-
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <%= link_to "Contactez-nous", "#", class: "navbar-button" %>
-      </li>
-    </ul>
-  </section>
+<div class="navbar navbar-expand-sm navbar-yidir" id="navbar">
+  <div class="container">
+    <section class="navigation-wrap">
+      <%= link_to "#", class: "navbar-logo" do %>
+        <%= image_tag "logo-nom.png", alt: "Yidir", width: 200 %>
+      <% end %>
+      <div class="nav-links-container">
+        <%= link_to "Projets", "#", class: "nav-link" %>
+        <%= link_to "À propos", "#", class: "nav-link" %>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <%= link_to "Contactez-nous", "#", class: "navbar-button" %>
+        </li>
+      </ul>
+    </section>
+  </div>
 </div>
+
+<script>
+window.addEventListener('scroll', function() {
+  var navbar = document.getElementById('navbar');
+  if (window.scrollY > 0) {
+    navbar.classList.add('navbar-transparent');
+  } else {
+    navbar.classList.remove('navbar-transparent');
+  }
+});
+</script>
