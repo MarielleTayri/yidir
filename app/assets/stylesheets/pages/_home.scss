@@ -1,4 +1,4 @@
-// Specific CSS for your home-page
+// CSS for your header
 .h1-header {
   font-size: 52px;
   font-weight: bold;
@@ -12,6 +12,8 @@
   color: $greeny;
 }
 
+
+//css fot services section
 .card {
   background-color: $smooth-black;
   border-radius: 6px;
@@ -30,6 +32,7 @@
 }
 
 
+//responsive mode
 @media (max-width: 768px) {
   .h1-header {
       max-width: 100%;
