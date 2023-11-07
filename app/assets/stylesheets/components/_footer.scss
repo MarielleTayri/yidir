@@ -1,9 +1,11 @@
 .footer-yidir {
-  background:transparent;
+  background:$otherblack;
   padding: 20px;
   position: relative;
   bottom: 0;
   width: 100%;
+  border-top: 4px solid rgba(255, 255, 255, .05);
+
 }
 
 .footer-yidir .footer-wrap {
