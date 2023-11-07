@@ -11,7 +11,7 @@
 
 .navbar-button:hover,
 .header-button:hover {
-  background-color: $greeny
+  background: linear-gradient(to right, $greeny, $lighter-green); /* Dégradé linéaire de gauche à droite */
   ; /* Couleur de fond au survol */
   color: white;
   transform: none;
