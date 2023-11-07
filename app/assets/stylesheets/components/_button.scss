@@ -1,7 +1,7 @@
 /* Styles pour le bouton de la navbar "Contactez-nous" */
 .navbar-button {
   text-decoration: none;
-  background-color: $grey-black; /* Couleur de fond du bouton */
+  background-color: $otherblack; /* Couleur de fond du bouton */
   border: 1px solid $lighter-green;
   color: $lighter-green;
   padding: 8px 20px; /* Espace à l'intérieur du bouton */
@@ -13,7 +13,7 @@
 .header-button:hover {
   background-color: $greeny
   ; /* Couleur de fond au survol */
-  color: $silver;
+  color: white;
   transform: none;
   text-shadow: none;
   transition: color 0.3s ease;

@@ -1,7 +1,7 @@
 .navbar-yidir {
   justify-content: center;
   align-items: center;
-  background: $smooth-black;
+  background:$otherblack;
   padding: 20px;
   color: $silver;
   border-bottom: 4px solid rgba(255, 255, 255, .05);
@@ -14,7 +14,7 @@
 
 //style on scroll
 .navbar-transparent {
-  background: $otherblack;
+  background: $night;
   transition:0.3s ease, border-color 0.3s ease; /* Transition fluide de la couleur de fond et de la couleur de la bordure */
 }
 
@@ -60,7 +60,7 @@
     font-size: 14px;
   }
   .navbar-yidir .nav-link:hover {
-    color: $lighter-green; /* Couleur du texte au survol */
+    color: $greeny; /* Couleur du texte au survol */
     transform: none;
     text-shadow: none;
   }
