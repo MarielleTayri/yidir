@@ -2,8 +2,8 @@
 .navbar-button {
   text-decoration: none;
   background-color: $grey-black; /* Couleur de fond du bouton */
-  border: 1px solid $greeny;
-  color: $greeny;
+  border: 1px solid $lighter-green;
+  color: $lighter-green;
   padding: 8px 20px; /* Espace à l'intérieur du bouton */
   border-radius: 14px; /* Coins arrondis du bouton */
   transition: background-color 0.3s ease; /* Transition de couleur de fond au survol */
@@ -11,7 +11,8 @@
 
 .navbar-button:hover,
 .header-button:hover {
-  background-color: $greeny; /* Couleur de fond au survol */
+  background-color: $greeny
+  ; /* Couleur de fond au survol */
   color: $silver;
   transform: none;
   text-shadow: none;
@@ -20,9 +21,9 @@
 
 .header-button {
   text-decoration: none;
-  color: $greeny;
+  color: $lighter-green;
   padding: 12px;
-  border: solid 1px $greeny;
+  border: solid 1px $lighter-green;
   border-radius: 8px;
 
 }

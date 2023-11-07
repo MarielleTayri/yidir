@@ -30,7 +30,7 @@
 }
 
 .navbar-yidir .nav-link:hover{
-  color: $greeny;
+  color: $lighter-green;
   transform: scale(1.1); /* Agrandissement de 10% */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée pour l'effet 3D */
   transition: all 0.3s ease; /* Transition fluide de toutes les propriétés */
@@ -60,7 +60,7 @@
     font-size: 14px;
   }
   .navbar-yidir .nav-link:hover {
-    color: $greeny; /* Couleur du texte au survol */
+    color: $lighter-green; /* Couleur du texte au survol */
     transform: none;
     text-shadow: none;
   }
