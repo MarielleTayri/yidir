@@ -11,7 +11,7 @@
 
 .navbar-button:hover,
 .header-button:hover {
-  background: linear-gradient(to right, $greeny, $lighter-green); /* Dégradé linéaire de gauche à droite */
+  background: linear-gradient(to bottom, $greeny, $lighter-green); /* Dégradé linéaire de gauche à droite */
   ; /* Couleur de fond au survol */
   color: white;
   transform: none;
@@ -27,10 +27,7 @@
   border-radius: 8px;
 
 }
-// .header-button:hover {
-//   color: $silver;
-//   background: $grey-black;
-// }
+
 
 @media (max-width: 768px){
   .navbar-button {

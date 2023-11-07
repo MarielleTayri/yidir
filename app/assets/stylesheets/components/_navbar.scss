@@ -1,7 +1,7 @@
 .navbar-yidir {
   justify-content: center;
   align-items: center;
-  background:$otherblack;
+  background:$night;
   padding: 20px;
   color: $silver;
   border-bottom: 4px solid rgba(255, 255, 255, .05);
@@ -13,9 +13,8 @@
 }
 
 //style on scroll
-.navbar-transparent {
-  background: $night;
-  transition:0.3s ease, border-color 0.3s ease; /* Transition fluide de la couleur de fond et de la couleur de la bordure */
+#navbar{
+  transition: transform 0.3s ease; /* Ajoute une transition de 0.3 secondes avec un effet de lissage (ease) */
 }
 
 

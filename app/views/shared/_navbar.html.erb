@@ -17,12 +17,22 @@
 
 
 <script>
-window.addEventListener('scroll', function() {
-  var navbar = document.getElementById('navbar');
-  if (window.scrollY > 0) {
-    navbar.classList.add('navbar-transparent');
-  } else {
-    navbar.classList.remove('navbar-transparent');
-  }
-});
+  var lastScrollTop = 0;
+  var scrollThreshold = 100; // Valeur seuil de défilement avant que la barre de navigation ne disparaisse
+
+  window.addEventListener('scroll', function() {
+    var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    var navbar = document.getElementById('navbar');
+
+    if (currentScroll > lastScrollTop && currentScroll > scrollThreshold) {
+      // Scrolling vers le bas et défilement suffisant vers le bas
+      navbar.style.transform = 'translateY(-100%)'; // Masquer la barre de navigation
+    } else {
+      // Scrolling vers le haut ou pas assez de défilement vers le bas
+      navbar.style.transform = 'translateY(0%)'; // Afficher la barre de navigation
+    }
+
+    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Assurez-vous que lastScrollTop ne soit pas négatif
+  });
+
 </script>
