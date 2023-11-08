@@ -1,15 +1,124 @@
-<%# /test add photo on homepage heade col droite %>
+<div class = "container">
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <h1 class="h1-header"> <span class="yid">YIDIR</span> transforme vos <span class="text-span-1">idées</span> en réalités <span class="text-span-1">numériques</span></h1>
+          </div>
+          <div class="col-md-12 mb-5">
+            <p class="p-header">De la conception au développement d'applications web et web-mobile sur mesure</p>
+          </div>
+          <div class="col-md-12">
+            <div class="button-container">
+              <%= link_to "On discute de vos idées ?", "#", class: "header-button" %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<div class="col-md-4">
-  <%= link_to "#", class: "profile-logo" do %>
-    <%= image_tag "artamel.png", alt: "Yidir", width: 400 %>
-  <% end %>
+<!-- Nouvelle section "Les Services" -->
+  <div class="container container-service">
+    <div class="row">
+      <div class="col-md-12 mb-4 text-center">
+        <h2>Les Services</h2>
+      </div>
+      <% services = [
+        { title: "Wireframe", description: "Le schéma visuel simplifié de la page web ou de l’appli montrant la disposition des différents éléments." },
+        { title: "UI Design", description: "L’art d’organiser les éléments d’une interface pour rendre le site web intuitif, attractif et facile à utiliser." },
+        { title: "UX Design", description: "L’optimisation de l’expérience utilisateur-ice, avec un focus sur la facilité d’utilisation et l’accessibilité." },
+        { title: "Développement", description: "La création et la mise en œuvre des fonctionnalités de l’appli grâce à différents langages de programmation." }
+      ] %>
+      <% services.each_with_index do |service, index| %>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title toggle-title" data-index="<%= index %>"><%= service[:title] %></h3>
+              <p class="card-text hidden-text"><%= service[:description] %></p>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+
+  <!-- Nouvelle section "Les Technos" -->
+  <div class = container>
+    <div class = row>
+      <div class="col-md-12 my-4 text-center">
+        <h2>Les Technos</h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nouvelle section "Le Process" -->
+  <div class = container>
+    <div class = row>
+      <div class="col-md-12 my-4 text-center">
+        <h2>Le Process</h2>
+      </div>
+    </div>
+  </div>
 </div>
 
-<%# //homepage body
-body {
-  background-image: linear-gradient(#020016 60%, rgba(2, 0, 22, 0.5) 100%), url(jups.png);
-  background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
-  background-repeat: no-repeat; /* Empêche l'image de se répéter */
-  background-attachment: fixed; /* Fixe l'image en place lors du défilement de la page */
-} %>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var toggleTitles = document.querySelectorAll(".toggle-title");
+
+    toggleTitles.forEach(function(title) {
+      title.addEventListener("click", function() {
+        var index = this.getAttribute("data-index");
+        var cardText = document.querySelectorAll(".card-text")[index];
+        cardText.classList.toggle("hidden-text");
+        title.classList.toggle("active");
+      });
+    });
+  });
+</script>
+
+
+
+    <!-- Nouvelle section "Les Services" -->
+  <div class = "container container-service">
+    <div class="row">
+      <div class="col-md-12 mb-3 text-center">
+        <h2>Les Services</h2>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Wireframe</h3>
+            <p class="card-text">Le schéma visuel simplifié  de la page web ou de l’ appli montrant la disposition des différents éléments.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">UI Design</h3>
+            <p class="card-text">L’art  d’organiser les éléments d’une interface pour rendre le site web intuitif, attractif et facile à utiliser.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card ">
+          <div class="card-body">
+            <h3 class="card-title">UX Design</h3>
+            <p class="card-text">L’optimisation de l’expérience utilisateur-ice, avec un focus sur la facilité d’utilisation et l’accessibilité.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title">Développement</h3>
+            <p class="card-text">La création et la mise en œuvre des fonctionnalités de l’appli grâce à différents langages de programmation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

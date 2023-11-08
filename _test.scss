@@ -1,0 +1,137 @@
+// CSS for header
+.h1-header {
+  font-size: 52px;
+  font-weight: bold;
+}
+
+.p-header {
+  font-size: 20px;
+}
+
+.text-span-1 {
+  color: $lighter-green;
+}
+.yid {
+  font-family: "Megrim";
+}
+
+.profile-logo img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 100%; /* pour que l'image ne dépasse pas la largeur du conteneur parent */
+  height: auto; /* Garantit que l'aspect ratio de l'image est préservé */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Ajoute un effet d'ombre douce */
+}
+
+body {
+  background-image: linear-gradient(#020016 60%, rgba(2, 0, 22, 0.7) 80%), url(main/jups.png);
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la zone */
+  background-repeat: no-repeat; /* Empêche l'image de se répéter */
+  background-attachment: fixed; /* Fixe l'image en place lors du défilement de la page */
+}
+
+
+//css for services section
+.container-service {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.card {
+  background-color: transparent;
+  border-radius: 6px;
+  transition: transform 0.5s ease;
+
+}
+.card:hover {
+  transform: scale(1.05);
+  border: none;
+  background-color:$night;
+}
+
+.card-body {
+  color: $silver;
+  text-align: center;
+}
+
+// Styles lorsque le titre de la carte est cliqué (texte visible)
+.card-title.active {
+  color:$lighter-green;
+}
+
+
+//responsive mode
+
+@media (max-width: 768px) {
+  .h1-header {
+      max-width: 100%;
+      font-size: 2.1rem;
+      line-height: 3.2rem;
+  }
+  .p-header{
+    font-size: 14px;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  .container-service {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .card {
+    background-color: $night;
+    border-bottom: 1px solid $light-gray;
+    transition: transform 0.5s ease;
+  }
+  .card:hover {
+    transform: none;
+    border-bottom: 1px solid $light-gray;
+
+  }
+
+}
+
+
+
+
+// autre style avant grid
+
+//responsive mode
+@media (max-width: 768px) {
+  .h1-header {
+      max-width: 100%;
+      font-size: 2.1rem;
+      line-height: 3.2rem;
+  }
+  .p-header{
+    font-size: 14px;
+  }
+  .container-service {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+}
+//css for services section
+.container-service {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.card {
+  background-color: transparent;
+  border-radius: 6px;
+  transition: transform 0.5s ease;
+
+}
+.card:hover {
+  transform: scale(1.05);
+  border: none;
+  background-color:$night;
+}
+
+.card-body {
+  color: $silver;
+  text-align: center;
+}
