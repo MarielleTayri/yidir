@@ -1,4 +1,4 @@
-// CSS for your header
+// CSS for header and body
 .h1-header {
   font-size: 52px;
   font-weight: bold;
@@ -40,7 +40,7 @@ body {
 .cards {
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Deux cartes par ligne minimum, largeur minimale de 150px */
+  grid-template-columns: repeat(4, 1fr); /* Deux cartes par ligne minimum, largeur minimale de 150px */
 }
 .card {
   background-color: transparent;
@@ -48,10 +48,21 @@ body {
   text-align: center;
   padding: 24px;
   border-radius: 8px;
+  transition: transform 0.5s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+  border: none;
+  background-color:$night;
+}
+.card-title {
+  font-weight: bold;
+}
+.card-text {
+  font-size: 18px;
 }
 
-
-//responsive mode
+//responsive mode for header
 @media (max-width: 768px) {
   .h1-header {
       max-width: 100%;
@@ -71,6 +82,10 @@ body {
 }
 
 @media(max-width: 768px) {
+  .container-service {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   .cards {
     grid-template-columns: 1fr;
   }
