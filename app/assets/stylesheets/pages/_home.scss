@@ -40,7 +40,7 @@ body {
 .cards {
   display: grid;
   grid-gap: 16px;
-  grid-template-columns: repeat(4, 1fr); /* Deux cartes par ligne minimum, largeur minimale de 150px */
+  grid-template-columns: repeat(4, 1fr);
 }
 .card {
   background-color: transparent;
@@ -79,6 +79,13 @@ body {
   .cards {
     grid-template-columns: 1fr 1fr;
   }
+  .card{
+    border: 1px solid $greeny;
+  }
+  .card:hover{
+    border: 1px solid $greeny;
+    transform: none;
+  }
 }
 
 @media(max-width: 768px) {
@@ -88,5 +95,22 @@ body {
   }
   .cards {
     grid-template-columns: 1fr;
+  }
+  .card {
+    // background-color: rgba(33, 37, 41, 0.8); /* Utilisation de RGBA avec un alpha de 0.8 pour 80% d'opacité */
+    background-color: $night;
+    pointer-events: none;
+    padding: 8px;
+    text-align: left;
+    border: none;
+  }
+
+  .card-text {
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
+
+  }
+  .card-title {
+    font-size: 18px;
   }
 }
