@@ -82,6 +82,7 @@ body {
 @media(max-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr;
+    grid-gap: 42px;
   }
   .card{
     border: 1px solid $greeny;
@@ -94,7 +95,7 @@ body {
 
 @media(max-width: 768px) {
   .container-service {
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 60px;
   }
   .cards {
@@ -110,11 +111,11 @@ body {
   }
 
   .card-text {
-    font-size: 16px;
+    font-size: 18px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3)
 
   }
   .card-title {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
