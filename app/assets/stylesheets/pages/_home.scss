@@ -63,7 +63,36 @@ body {
 }
 
 
-//css for process section
+//css for techno section
+.container-technos {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tech-logos-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  justify-content: center; /* Ajustez selon vos préférences d'alignement */
+}
+
+.tech-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* Ajustez la hauteur selon vos préférences */
+  background-color: transparent; /* Couleur de fond optionnelle pour les logos */
+  margin: 5px; /* Marge entre les logos */
+}
+
+.ct-fancy-icon {
+  color: $silver;
+  /* Styles pour l'icône, si nécessaire */
+}
+
+.fa-2x {
+  /* Styles spécifiques pour la taille des logos, si nécessaire */
+}
 
 
 //responsive mode for header

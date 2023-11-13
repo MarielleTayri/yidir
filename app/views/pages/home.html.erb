@@ -42,19 +42,39 @@
   </div>
 </div>
 
+<!-- Nouvelle section "Les Technos" -->
+<div class="container container-technos my-5">
+  <h2 class="section-title text-center mb-4">Les Technos</h2>
+  <div class="tech-logos-container">
+    <% tech_logos = [
+      "html5",
+      "css3",
+      "sass",
+      "js",
+      "bootstrap",
+      "react",
+      "php",
+      "github",
+      "git",
+      "figma",
+      "wordpress",
+      "trello"
+    ] %>
 
-
-  <!-- Nouvelle section "Les Technos" -->
-  <div class = container>
-    <div class = row>
-      <div class="col-md-12 my-4 text-center">
-        <h2>Les Technos</h2>
+    <% tech_logos.each do |logo| %>
+      <div class="tech-logo-wrapper">
+        <div class="ct-fancy-icon">
+          <i class="fab fa-<%= logo %> fa-3x"></i>
+        </div>
       </div>
-    </div>
+    <% end %>
   </div>
+</div>
+
+
 
   <!-- Nouvelle section "Le Process" -->
-<div class="container container-process">
+<div class="container container-process my-4">
   <h2 class="section-title text-center mb-4">Le Process</h2>
   <% services = [
     { title: "Prise de contact", description: "Le but de ce premier contact est de comprendre en détails vos besoins et vos objectifs afin de nous aligner sur votre vision." },
