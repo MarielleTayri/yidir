@@ -39,14 +39,14 @@ body {
 }
 .cards {
   display: grid;
-  grid-gap: 16px;
+  grid-gap: 20px;
   grid-template-columns: repeat(4, 1fr);
 }
 .card {
   background-color: transparent;
   color: $silver;
   text-align: center;
-  padding: 24px;
+  padding: 16px;
   border-radius: 8px;
   // transition: transform 0.5s ease;
 }
@@ -64,10 +64,7 @@ body {
 
 
 //css for techno section
-.container-technos {
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 .tech-logos-container {
   display: grid;
@@ -86,7 +83,7 @@ body {
 }
 
 .ct-fancy-icon {
-  color: $silver;
+  color: $grey-black;
   /* Styles pour l'icône, si nécessaire */
 }
 
