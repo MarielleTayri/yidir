@@ -34,7 +34,7 @@ body {
 //css for services section
 
 .container-service {
-  margin-bottom: 100px;
+  margin-bottom: 120px;
   margin-top: 150px;
 }
 .cards {
@@ -65,6 +65,9 @@ body {
 
 //css for techno section
 
+.container-technos {
+  margin-bottom: 120px;
+}
 
 .tech-logos-container {
   display: grid;
@@ -83,13 +86,16 @@ body {
 }
 
 .ct-fancy-icon {
-  color: $grey-black;
+  color: $bluz;
   /* Styles pour l'icône, si nécessaire */
 }
 
-.fa-2x {
-  /* Styles spécifiques pour la taille des logos, si nécessaire */
+.ct-fancy-icon :hover {
+  color: $grey-black;
 }
+
+//css for process section
+
 
 
 //responsive mode for header
