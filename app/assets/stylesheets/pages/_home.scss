@@ -145,3 +145,10 @@ body {
     font-size: 22px;
   }
 }
+
+//responsive for technos
+@media(max-width: 768px) {
+ .tech-logos-container{
+  grid-template-columns: repeat(4, 1fr);
+ }
+}
