@@ -30,6 +30,10 @@ body {
   background-attachment: fixed; /* Fixe l'image en place lors du défilement de la page */
 }
 
+.section-title {
+  font-weight: bold;
+}
+
 
 //css for services section
 
@@ -45,8 +49,8 @@ body {
 .card {
   background-color: transparent;
   color: $silver;
-  text-align: center;
-  padding: 16px;
+  // text-align: center;
+  padding: 20px;
   border-radius: 8px;
   // transition: transform 0.5s ease;
 }
