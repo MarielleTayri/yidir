@@ -2,26 +2,21 @@
   <div class="container my-5">
     <div class="row">
       <div class="col-md-8">
-        <div class="row">
-          <div class="col-md-12 mb-3">
-            <h1 class="h1-header">
-              <span class="yid">YIDIR</span> transforme vos
-              <span class="text-span-1">idées</span> en réalités
-              <span class="text-span-1">numériques</span>
-            </h1>
-          </div>
-          <div class="col-md-12 mb-5">
-            <p class="p-header">De la conception au développement d'applications web et web-mobile sur mesure</p>
-          </div>
-          <div class="col-md-12">
-            <div class="button-container">
-              <%= link_to "On discute de vos idées ?", "#", class: "header-button" %>
-            </div>
-          </div>
+        <h1 class="h1-header mb-3">
+          <span class="yid">YIDIR</span> transforme vos
+          <span class="text-span-1">idées</span> en réalités
+          <span class="text-span-1">numériques</span>
+        </h1>
+
+        <p class="p-header mb-5">De la conception au développement d'applications web et web-mobile sur mesure</p>
+
+        <div class="button-container">
+          <%= link_to "On discute de vos idées ?", "#", class: "header-button" %>
         </div>
       </div>
     </div>
   </div>
+
 
 <!-- Nouvelle section "Les Services" -->
 <div class="container container-service">
@@ -72,7 +67,7 @@
 </div>
 
   <!-- Nouvelle section "Le Process" -->
-<div class="container container-process my-4">
+<div class="container container-process">
   <h1 class="section-title text-center mb-5">Le Process</h1>
   <% services = [
     { title: "Prise de contact", description: "Le but de ce premier contact est de comprendre en détails vos besoins et vos objectifs afin de nous aligner sur votre vision." },

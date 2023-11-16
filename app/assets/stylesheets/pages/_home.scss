@@ -15,13 +15,6 @@
   font-family: "Megrim";
 }
 
-.profile-logo img {
-  border-radius: 50%;
-  width: 100%;
-  max-width: 100%; /* pour que l'image ne dépasse pas la largeur du conteneur parent */
-  height: auto; /* Garantit que l'aspect ratio de l'image est préservé */
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); /* Ajoute un effet d'ombre douce */
-}
 
 body {
   background-image: linear-gradient(#020016 60%, rgba(2, 0, 22, 0.7) 80%), url(main/jups.png);
@@ -70,7 +63,7 @@ body {
 //css for techno section
 
 .container-technos {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 .tech-logos-container {
@@ -99,7 +92,9 @@ body {
 }
 
 //css for process section
-
+.container-process {
+  margin-bottom: 120px;
+}
 
 
 //responsive mode for header
@@ -118,14 +113,13 @@ body {
 @media(max-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 42px;
+    grid-gap: 32px;
   }
   .card{
     border: 1px solid $greeny;
   }
   .card:hover{
     border: 1px solid $greeny;
-    transform: none;
   }
 }
 
