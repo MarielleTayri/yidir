@@ -71,15 +71,14 @@
   </div>
 </div>
 
-
   <!-- Nouvelle section "Le Process" -->
 <div class="container container-process my-4">
   <h1 class="section-title text-center mb-5">Le Process</h1>
   <% services = [
     { title: "Prise de contact", description: "Le but de ce premier contact est de comprendre en détails vos besoins et vos objectifs afin de nous aligner sur votre vision." },
-    { title: "Cadrage du projet", description: "Nous définirons ensemble les fonctionnalités, la structure et l’apparence de votre produit. Vous aurez un aperçu clair du plan, afin que le projet se développe selon vos attentes." },
+    { title: "Cadrage", description: "Nous définirons ensemble les fonctionnalités, la structure et l’apparence de votre produit. Vous aurez un aperçu clair du plan, afin que le projet se développe selon vos attentes." },
     { title: "Conception", description: "Nous créons votre design visuel et le transformons en réalité fonctionnelle. Vous serez impliqué-e à chaque étape pour garantir une cohérence avec votre vision." },
-    { title: "Livraison & Suivi", description: "Après des test rigoureux et une version 1 à laquelle vous aurez accès, nous vous remettrons votre livrable prêt à être lancé. Nous assurons un suivi pour garantir le bon fonctionnement." }
+    { title: "Livraison & Suivi", description: "Après des test rigoureux et une version 1 à laquelle vous aurez accès, nous vous remettrons votre livrable prêt à être lancé. Nous assurons un suivi pour en garantir le bon fonctionnement." }
   ] %>
   <div class="cards">
     <% services.each_with_index do |service, index| %>
@@ -88,5 +87,10 @@
         <p class="card-text"><%= service[:description] %></p>
       </div>
     <% end %>
+   </div>
   </div>
+  <div class="button-container text-center">
+    <%= link_to "Vous avez des questions ?", "#", class: "bottom-button" %>
+  </div>
+
 </div>

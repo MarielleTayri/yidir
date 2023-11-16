@@ -10,23 +10,34 @@
 }
 
 .navbar-button:hover,
-.header-button:hover {
-  background: linear-gradient(to bottom, $greeny, $lighter-green); /* Dégradé linéaire de gauche à droite */
-  ; /* Couleur de fond au survol */
-  color: $otherblack;
-  transform: none;
-  text-shadow: none;
-  transition: color 0.3s ease;
+.header-button:hover,
+.bottom-button:hover {
+  // background: linear-gradient(to bottom, $lighter-green, $greeny); /* Dégradé linéaire de gauche à droite */
+  // ; /* Couleur de fond au survol */
+  background: $greeny;
+  color: $silver;
+  transition: background-color 0.3s ease;
 }
 
 .header-button {
   text-decoration: none;
   color: $lighter-green;
-  padding: 12px;
+  padding: 16px;
   border: solid 1px $lighter-green;
   border-radius: 8px;
-
+  font-size: 18px;
 }
+
+.bottom-button {
+  text-decoration: none;
+  color: black;
+  background-color: $lighter-green;
+  padding: 12px;
+  border: solid 1px $night;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
 
 
 @media (max-width: 768px){
