@@ -42,16 +42,10 @@ body {
 .card {
   background-color: transparent;
   color: $silver;
-  // text-align: center;
   padding: 20px;
   border-radius: 8px;
-  // transition: transform 0.5s ease;
 }
-// .card:hover {
-//   transform: scale(1.05);
-//   border: none;
-//   background-color:$night;
-// }
+
 .card-title {
   font-weight: bold;
 }
@@ -77,14 +71,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px; /* Ajustez la hauteur selon vos préférences */
+  height: 100px;
   background-color: transparent; /* Couleur de fond optionnelle pour les logos */
   margin: 5px; /* Marge entre les logos */
 }
 
 .ct-fancy-icon {
   color: $bluz;
-  /* Styles pour l'icône, si nécessaire */
 }
 
 .ct-fancy-icon :hover {
