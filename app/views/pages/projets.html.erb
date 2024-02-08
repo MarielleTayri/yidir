@@ -1,1 +1,18 @@
-<h1>Projets</h1>
+<!-- Nouvelle section "Les Projets" -->
+  <div class="container container-service">
+    <h1 class="section-title text-center mb-5">Les Projets</h1>
+    <% projets = [
+      { title: "Balle En Main", description: "Le schéma visuel simplifié de la page web ou de l’appli montrant la disposition des différents éléments." },
+      { title: "Anaïs Les Fleurs - illustratrice", description: "L’art d’organiser les éléments d’une interface pour rendre le site web intuitif, attractif et facile à utiliser." },
+      { title: "Jérémy Attard", description: "L’optimisation de l’expérience utilisateur-ice, avec un focus sur la facilité d’utilisation et l’accessibilité." },
+      { title: "Développement", description: "La création et la mise en œuvre des fonctionnalités de l’appli grâce à différents langages de programmation." }
+    ] %>
+    <div class="cards">
+      <% projets.each_with_index do |projet, index| %>
+        <div class="card" data-index="<%= index %>">
+          <h3 class="card-title"><%= projet[:title] %></h3>
+          <p class="card-text"><%= projet[:description] %></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
