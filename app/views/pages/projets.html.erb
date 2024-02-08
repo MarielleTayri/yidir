@@ -2,16 +2,18 @@
   <div class="container container-service">
     <h1 class="section-title text-center mb-5">Les Projets</h1>
     <% projets = [
-      { title: "Balle En Main", description: "Site vitrine pour une association de Basketball 3x3." },
-      { title: "Anaïs Les Fleurs", description: "Portolio de l'artiste, cours de dessins, et e-commerce." },
-      { title: "Jérémy Attard", description: "Site pour un chercheur en philosophie des sciences et physique théorique." },
-      { title: "JS library", description: "Une série de jeux codés en javascript" }
+      { title: "Balle En Main", description: "Site vitrine pour une association de Basketball 3x3.", link:"https://balleenmain.com"},
+      { title: "Anaïs Les Fleurs", description: "Portolio de l'artiste, cours de dessins, et e-commerce.", link:"https://anaislesfleurs.com"},
+      { title: "Jérémy Attard", description: "Site pour un chercheur en philosophie des sciences et physique théorique.", link:"https://jeremyattard.fr" },
+      { title: "JS Library", description: "Une série de jeux codés en javascript.", link:"https://github.com/MarielleTayri/Games" }
     ] %>
     <div class="cards">
       <% projets.each_with_index do |projet, index| %>
         <div class="card" data-index="<%= index %>">
           <h3 class="card-title"><%= projet[:title] %></h3>
           <p class="card-text"><%= projet[:description] %></p>
+          <a href="<%= projet[:link] %>" class="arrow-link">&#8594;</a>
+
         </div>
       <% end %>
     </div>
