@@ -4,12 +4,12 @@
         <%= image_tag "main/logo-nom.png", alt: "Yidir"%>
       <% end %>
       <div class="nav-links-container">
-        <%= link_to "Projets", "#", class: "nav-link" %>
-        <%= link_to "Équipe", "#", class: "nav-link" %>
+        <%= link_to "Projets", projets_path, class: "nav-link" %>
+        <%= link_to "Équipe", equipe_path, class: "nav-link" %>
       </div>
       <ul class="navbar-nav">
         <li class="nav-item">
-          <%= link_to "Contactez-nous", "#", class: "navbar-button" %>
+          <%= link_to "Contactez-nous", contact_path, class: "navbar-button" %>
         </li>
       </ul>
   </div>
