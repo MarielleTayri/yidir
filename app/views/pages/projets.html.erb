@@ -1,4 +1,4 @@
-<!-- Nouvelle section "Les Projets" -->
+ <!-- Nouvelle section "Les Projets" -->
   <div class="container container-service">
     <h1 class="section-title text-center mb-5">Les Projets</h1>
     <% projets = [
@@ -7,13 +7,17 @@
       { title: "Jérémy Attard", description: "Site pour un chercheur en philosophie des sciences et physique théorique.", link:"https://jeremyattard.fr" },
       { title: "JS Library", description: "Une série de jeux codés en javascript.", link:"https://github.com/MarielleTayri/Games" }
     ] %>
-    <div class="cards">
+    <div class="card-product-container">
       <% projets.each_with_index do |projet, index| %>
-        <div class="card" data-index="<%= index %>">
-          <h3 class="card-title"><%= projet[:title] %></h3>
-          <p class="card-text"><%= projet[:description] %></p>
-          <a href="<%= projet[:link] %>" class="arrow-link">&#8594;</a>
-
+        <div class="card-product" data-index="<%= index %>">
+          <% if projet[:image].present? %>
+            <%= image_tag projet[:image], alt: projet[:title], class: "card-image" %>
+          <% end %>
+          <div class="card-body">
+            <h3 class="card-title"><%= projet[:title] %></h3>
+            <p class="card-text"><%= projet[:description] %></p>
+            <a href="<%= projet[:link] %>" class="arrow-link">&#8594;</a>
+          </div>
         </div>
       <% end %>
     </div>
