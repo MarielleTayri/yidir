@@ -70,16 +70,15 @@
   <div class="container container-process">
     <h1 class="section-title text-center mb-5">Le Process</h1>
     <% services = [
-      { number: "1 -", title: "Prise de contact", description: "Le but de ce premier contact est de comprendre en détails vos besoins et vos objectifs afin de nous aligner sur votre vision." },
-      { number: "2 -", title: "Cadrage", description: "Nous définirons ensemble les fonctionnalités, la structure et l’apparence de votre produit. Vous aurez un aperçu clair du plan, afin que le projet se développe selon vos attentes." },
-      { number: "3 -", title: "Conception", description: "Nous créons votre design visuel et le transformons en réalité fonctionnelle. Vous serez impliqué-e à chaque étape pour garantir une cohérence avec votre vision." },
-      { number: "4 -", title: "Livraison & Suivi", description: "Après des tests rigoureux et une version 1 à laquelle vous aurez accès, nous vous remettrons votre livrable prêt à être lancé. Nous assurons un suivi pour en garantir le bon fonctionnement." }
+      { number: "01", title: "Prise de contact", description: "Le but de ce premier contact est de comprendre en détails vos besoins et vos objectifs afin de nous aligner sur votre vision." },
+      { number: "02", title: "Cadrage", description: "Nous définirons ensemble les fonctionnalités, la structure et l’apparence de votre produit. Vous aurez un aperçu clair du plan, afin que le projet se développe selon vos attentes." },
+      { number: "03", title: "Conception", description: "Nous créons votre design visuel et le transformons en réalité fonctionnelle. Vous serez impliqué-e à chaque étape pour garantir une cohérence avec votre vision." },
+      { number: "04", title: "Livraison & Suivi", description: "Après des tests rigoureux et une version 1 à laquelle vous aurez accès, nous vous remettrons votre livrable prêt à être lancé. Nous assurons un suivi pour en garantir le bon fonctionnement." }
     ] %>
     <div class="cards">
       <% services.each_with_index do |service, index| %>
         <div class="card" data-index="<%= index %>">
           <h4 class="card-number"><%= service[:number] %></h4>
-          <h3 class="card-title"><%= service[:title] %></h3>
           <p class="card-text"><%= service[:description] %></p>
         </div>
       <% end %>
