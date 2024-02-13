@@ -1,0 +1,20 @@
+
+
+.card-members-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.card-member {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 20px; /* Ajoute du padding pour plus d'espace à l'intérieur de chaque carte */
+}
+
+
+.card-subtitle {
+  font-size: 18px;
+  margin-bottom: 10px; /* Ajoute de l'espace entre le sous-titre et le texte */
+}
