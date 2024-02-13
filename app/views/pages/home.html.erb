@@ -79,6 +79,7 @@
       <% services.each_with_index do |service, index| %>
         <div class="card" data-index="<%= index %>">
           <h4 class="card-number"><%= service[:number] %></h4>
+          <h3><div class="card-title"><%= service[:title] %></div></h3>
           <p class="card-text"><%= service[:description] %></p>
         </div>
       <% end %>

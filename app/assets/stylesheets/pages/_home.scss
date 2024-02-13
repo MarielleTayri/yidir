@@ -129,7 +129,6 @@ body {
     grid-template-columns: 1fr;
   }
   .card {
-    // background-color: rgba(33, 37, 41, 0.8); /* Utilisation de RGBA avec un alpha de 0.8 pour 80% d'opacité */
     background-color: $night;
     pointer-events: none;
     padding: 8px;

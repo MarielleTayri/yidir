@@ -1,5 +1,7 @@
-
-
+.container-team {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .card-members-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -8,13 +10,14 @@
 }
 
 .card-member {
-  background-color: transparent;
+  background-color: $night;
   border-radius: 8px;
   padding: 20px; /* Ajoute du padding pour plus d'espace à l'intérieur de chaque carte */
 }
 
 
 .card-subtitle {
-  font-size: 18px;
+  color: $lighter-green;
+  margin-top: 10px;
   margin-bottom: 10px; /* Ajoute de l'espace entre le sous-titre et le texte */
 }
