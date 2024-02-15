@@ -1,18 +1,33 @@
 <div class="container container-team">
   <h1 class="section-title text-center mb-5">Rencontrez l'équipe de Yidir</h1>
-    <% members = [
-      { title: "Amel", subtitle:"Designeuse de talent",description: "Autodidacte passionnée, Amel incarne l'essence même de l'artiste-désigneuse polyvalente. Amel transforme les idées en des visuels captivants. Elle se distingue par son œil attentif aux détails, son sens aigu des couleurs et sa capacité à créer des logos percutants. Ses designs racontent des histoires, suscitent des émotions et reflètent l'essence même de vos projets. Que vous recherchiez la simplicité élégante, la modernité technique ou l'extravagance artistique, Amel saura donner vie à vos idées de manière unique et mémorable. Avec Amel à bord, découvrez un monde où chaque pixel est façonné avec passion et précision."},
-      { title: "Myriam", subtitle: "Développeuse web", description: "Issue d'une formation en droit , Myriam cadre les projets avec précision et  anticipe les besoins clients.Elle aime concevoir des solutions web solides, évolutives et alignées sur les objectifs des clients. Son expertise en matière de propriété intellectuelle garantit un traitement éthique  et une conformité légale de chaque projet. Myriam incarne la fusion entre la logique juridique et la créativité technique."},
-    ] %>
-  <div class="card-members-container">
-      <% members.each_with_index do |member, index| %>
-        <div class="card-member" data-index="<%= index %>">
+
+  <% members = [
+    { title: "Amel", subtitle:"Designeuse de talent", description: "Autodidacte passionnée, Amel incarne l'essence même de l'artiste-désigneuse polyvalente. Amel transforme les idées en des visuels captivants. Elle se distingue par son œil attentif aux détails, son sens aigu des couleurs et sa capacité à créer des logos percutants. Ses designs racontent des histoires, suscitent des émotions et reflètent l'essence même de vos projets. Que vous recherchiez la simplicité élégante, la modernité technique ou l'extravagance artistique, Amel saura donner vie à vos idées de manière unique et mémorable. Avec Amel à bord, découvrez un monde où chaque pixel est façonné avec passion et précision.", image: "myriam.png" },
+    { title: "Myriam", subtitle: "Développeuse web", description: "Issue d'une formation en droit , Myriam cadre les projets avec précision et  anticipe les besoins clients.Elle aime concevoir des solutions web solides, évolutives et alignées sur les objectifs des clients. Son expertise en matière de propriété intellectuelle garantit un traitement éthique  et une conformité légale de chaque projet. Myriam incarne la fusion entre la logique juridique et la créativité technique.", image: "myriam.png" },
+  ] %>
+
+  <% members.each do |member| %>
+    <div class="card-members mb-4">
+      <div class="row no-gutters">
+        <% if member[:title] == "Amel" %>
+          <div class="col-md-4 order-md-1">
+            <!-- Mettez ici l'image de Amel -->
+            <%= image_tag member[:image], alt: "Photo de #{member[:title]}", class: "card-img" %>
+          </div>
+        <% else %>
+          <div class="col-md-4">
+            <!-- Mettez ici l'image de Myriam -->
+            <%= image_tag member[:image], alt: "Photo de #{member[:title]}", class: "card-img" %>
+          </div>
+        <% end %>
+        <div class="col-md-8">
           <div class="card-body">
             <h2 class="card-title"><%= member[:title] %></h2>
             <h3 class="card-subtitle"><%= member[:subtitle] %></h3>
             <p class="card-text"><%= member[:description] %></p>
           </div>
         </div>
-      <% end %>
+      </div>
     </div>
+  <% end %>
 </div>
